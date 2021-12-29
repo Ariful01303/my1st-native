@@ -5,7 +5,7 @@ import Review from '../Review/Review'
 export default function About() {
     const [reviews,setReviews]=useState([])
     useEffect(()=>{
-        fetch('https://fast-cliffs-41980.herokuapp.com/review')
+        fetch("https://fast-cliffs-41980.herokuapp.com/review")
         .then(res=>res.json())
         .then(data=>setReviews(data)) 
         

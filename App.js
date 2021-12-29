@@ -4,6 +4,7 @@ import { StyleSheet,  Text, View } from 'react-native';
 import {Link,  NativeRouter,Route,Routes } from 'react-router-native';
 import About from './Components/About/About';
 import Add from './Components/Add/Add';
+import AddAproduct from './Components/AddAproduct/AddAproduct';
 import Alldet from './Components/AllDet/Alldet';
 import Parses from './Components/AllDet/Parses/Parses';
 import Cars from './Components/Cars';
@@ -22,6 +23,7 @@ import Register from './Components/Register/Register';
         <Link to="/home"><Text style={styles.mar} >Home</Text></Link>
         <Link to="/"><Text></Text></Link>
         <Link to="/cars"><Text style={styles.mar}>Cars</Text></Link>
+        <Link to="/addProduct"><Text style={styles.mar}>Add</Text></Link>
         <Link to="/about"><Text style={styles.mar}>About</Text></Link>
         
 
@@ -32,8 +34,9 @@ import Register from './Components/Register/Register';
        <Route path="/" element={<Home></Home>}></Route>
        <Route  path="/home" element={<Home></Home>}></Route>
        <Route path="/cars" element={<Cars></Cars>}></Route>
+       <Route path="/addProduct" element={<AddAproduct></AddAproduct>}></Route>
+       <Route path="/addreview" element={<Add></Add>}></Route>
        <Route path="/about" element={<About></About>}></Route>
-       <Route path="/add" element={<Add></Add>}></Route>
        <Route path="/login" element={<Login></Login>}></Route>
       <Route path="/detail/:dtl" element={<Alldet></Alldet>}></Route>
        <Route path="/login" element={<Login></Login>}></Route>
@@ -69,8 +72,8 @@ const styles = StyleSheet.create({
 
   },
   mar:{
-    marginLeft:10,
-    fontSize: 30,
+    marginLeft:5,
+    fontSize: 25,
   fontWeight: "700",
   padding:5
   },

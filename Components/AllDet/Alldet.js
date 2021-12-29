@@ -27,7 +27,7 @@ export default function Alldet() {
       <Text>{detail?.name}</Text>
       <Text>{detail?.description}</Text>
      <Text style={{fontSize:30}}>{detail?.price} ৳</Text>
-      <Link to='/purses'><Text style={{backgroundColor:'red',textAlign:'center', width:100,borderRadius:10,fontSize:30,marginBottom:20,marginTop:15}}>Buy</Text></Link>
+     <Link to='/purses'><Text style={{backgroundColor:'green',color:'white',textAlign:'center', width:100,borderRadius:10,fontSize:25,marginLeft:5,marginBottom:20,marginTop:15}}>Parses</Text></Link>
         </View>
     )
 }
